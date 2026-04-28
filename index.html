@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에딧매치 - 쇼츠 편집 매칭</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 30px;
+            padding: 60px 40px;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .feature {
+            display: inline-block;
+            background: #f8f9fa;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 15px;
+            font-size: 1.1em;
+        }
+        
+        .price-section {
+            margin: 50px 0;
+        }
+        
+        .price-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .price-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .price-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        footer {
+            margin-top: 50px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .container { padding: 40px 20px; }
+            .price-cards { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ 에딧매치</h1>
+        <p class="subtitle">24시간 안에 완성되는 쇼츠 편집</p>
+        
+        <div>
+            <span class="feature">🎬 인스타 릴스</span>
+            <span class="feature">📱 틱톡</span>
+            <span class="feature">🎥 유튜브 쇼츠</span>
+        </div>
+        
+        <div class="price-section">
+            <h2>💰 가격</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <h3>기본</h3>
+                    <div class="price">3만원</div>
+                    <p>쇼츠 1개</p>
+                </div>
+                <div class="price-card">
+                    <h3>스탠다드</h3>
+                    <div class="price">12만원</div>
+                    <p>쇼츠 5개</p>
+                </div>
+                <div class="price-card">
+                    <h3>프리미엄</h3>
+                    <div class="price">20만원</div>
+                    <p>쇼츠 10개</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="https://forms.gle/your-form-link" class="cta-button">지금 의뢰하기 →</a>
+        
+        <footer>
+            <p>📧 contact@editmatch.com</p>
+            <p>© 2024 에딧매치. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
